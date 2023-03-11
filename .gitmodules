@@ -1,0 +1,3 @@
+[submodule "fmtlog"]
+	path = fmtlog
+	url = git@github.com:tmartin-gh/fmtlog.git
