@@ -7,10 +7,8 @@
 
 int main(void)
 {
-    fmtlog::setHeaderPattern("{HMSf} [{l}]");
-    fmtlog::startPollingThread(100'000'000);
-    fmtlog::preallocate();
     FMTLOG(fmtlog::INF, "fmt style {}", 12345);
-    FMTLOG_PRINTF(fmtlog::INF, "printf style %d", 12345);
+    FMTLOG(fmtlog::INF, "fmt style {}", 3.14);
+
     return 0;
 }
